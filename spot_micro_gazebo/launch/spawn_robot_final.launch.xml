@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<launch>
+    <!--world-->
+    <include file="$(find-pkg-share spot_micro_gazebo)/launch/start_world.launch.py"/>
+    <!-- Publish URDF file in robot_description topic -->
+    <include file="$(find-pkg-share spot_micro_description)/launch/spot_micro_final_visualize.launch.py"/>
+    <!-- Read robot_description an spawn in gazebo running sim -->
+    <include file="$(find-pkg-share spot_micro_gazebo)/launch/spawn_robot_description.launch.py"/>
+</launch>
