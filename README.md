@@ -1,1 +1,0 @@
-# spotmicro_ros2
