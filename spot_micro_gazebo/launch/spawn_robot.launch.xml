@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+<launch>
+    <include file="$(find-pkg-share spot_micro_gazebo)/launch/start_world.launch.py"/>
+    <include file="$(find-pkg-share spot_micro_description)/launch/spot_micro_final_visualize.launch.py"/>
+    <include file="$(find-pkg-share spot_micro_description)/launch/description.launch.py"/>
+</launch>
