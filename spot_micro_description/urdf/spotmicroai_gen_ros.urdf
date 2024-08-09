@@ -129,7 +129,7 @@
     <child link="front_link"/>
   </joint>
   <gazebo reference="front_link">
-    <material>brown</material>
+    <material>Gazebo/Yellow</material>
   </gazebo>
   <!-- create Legs -->
   <link name="front_left_shoulder_link">
@@ -151,6 +151,9 @@
       <inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100"/>
     </inertial>
   </link>
+  <gazebo reference="front_left_shoulder_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="front_left_leg_link_cover">
     <visual>
       <geometry>
@@ -191,7 +194,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
-
+  <gazebo reference="front_left_leg_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="front_left_foot_link">
     <visual>
       <geometry>
@@ -211,7 +216,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
-
+  <gazebo reference="front_left_foot_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="front_left_toe_link">
     <visual>
       <geometry>
@@ -256,7 +263,9 @@
     <child link="front_left_leg_link_cover"/>
     <origin xyz="0 0 0"/>
   </joint>
-
+  <gazebo reference="front_left_leg_link_cover">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
   <joint name="front_left_foot" type="revolute">
     <parent link="front_left_leg_link"/>
     <child link="front_left_foot_link"/>
@@ -291,6 +300,9 @@
       <inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100"/>
     </inertial>
   </link>
+  <gazebo reference="front_right_shoulder_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="front_right_leg_link_cover">
     <visual>
       <geometry>
@@ -306,6 +318,7 @@
       <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
     </collision>
   </link>
+
   <link name="front_right_leg_link">
     <visual>
       <geometry>
@@ -330,6 +343,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="front_right_leg_link">
+    <material>Gazebo/Black</material>
+  </gazebo> 
   <link name="front_right_foot_link">
     <visual>
       <geometry>
@@ -349,6 +365,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="front_right_foot_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="front_right_toe_link">
     <visual>
       <geometry>
@@ -369,6 +388,7 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+
   <joint name="front_right_shoulder" type="revolute">
     <parent link="body_link"/>
     <child link="front_right_shoulder_link"/>
@@ -403,6 +423,9 @@
     <child link="front_right_toe_link"/>
     <origin xyz="0 0 -0.115"/>
   </joint>
+  <gazebo reference="front_right_leg_link_cover">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
   <link name="rear_left_shoulder_link">
     <visual>
       <geometry>
@@ -422,6 +445,9 @@
       <inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100"/>
     </inertial>
   </link>
+  <gazebo reference="rear_left_shoulder_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_left_leg_link_cover">
     <visual>
       <geometry>
@@ -437,6 +463,7 @@
       <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
     </collision>
   </link>
+
   <link name="rear_left_leg_link">
     <visual>
       <geometry>
@@ -461,6 +488,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="rear_left_leg_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_left_foot_link">
     <visual>
       <geometry>
@@ -480,6 +510,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="rear_left_foot_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_left_toe_link">
     <visual>
       <geometry>
@@ -500,6 +533,7 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+
   <joint name="rear_left_shoulder" type="revolute">
     <parent link="body_link"/>
     <child link="rear_left_shoulder_link"/>
@@ -534,6 +568,9 @@
     <child link="rear_left_toe_link"/>
     <origin xyz="0 0 -0.115"/>
   </joint>
+  <gazebo reference="rear_left_leg_link_cover">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
   <link name="rear_right_shoulder_link">
     <visual>
       <geometry>
@@ -553,6 +590,9 @@
       <inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100"/>
     </inertial>
   </link>
+  <gazebo reference="rear_right_shoulder_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_right_leg_link_cover">
     <visual>
       <geometry>
@@ -567,7 +607,15 @@
       </geometry>
       <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
     </collision>
+
+    <collision>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.050"/>
+      <geometry>
+        <box size="0.028 0.036 0.12"/>
+      </geometry>
+    </collision>
   </link>
+
   <link name="rear_right_leg_link">
     <visual>
       <geometry>
@@ -592,6 +640,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="rear_right_leg_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_right_foot_link">
     <visual>
       <geometry>
@@ -611,6 +662,9 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+  <gazebo reference="rear_right_foot_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
   <link name="rear_right_toe_link">
     <visual>
       <geometry>
@@ -631,6 +685,7 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+
   <joint name="rear_right_shoulder" type="revolute">
     <parent link="body_link"/>
     <child link="rear_right_shoulder_link"/>
@@ -665,7 +720,9 @@
     <child link="rear_right_toe_link"/>
     <origin xyz="0 0 -0.115"/>
   </joint>
-
+  <gazebo reference="rear_right_leg_link_cover">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
   <gazebo reference="rear_left_toe_link">
       <kp>1000000000000000000000000000.0</kp>
       <kd>1000000000000000000000000000.0</kd>
@@ -756,6 +813,11 @@
       <joint_name>rear_right_shoulder</joint_name>          
       <joint_name>rear_right_foot</joint_name>
       <joint_name>rear_right_leg</joint_name>
+      
+      <joint_name>rear_right_leg_cover_joint</joint_name>
+      <joint_name>rear_left_leg_cover_joint</joint_name>
+      <joint_name>front_right_leg_cover_joint</joint_name>
+      <joint_name>front_left_leg_cover_joint</joint_name>
     </plugin>
   </gazebo>
 
