@@ -51,7 +51,7 @@ def generate_launch_description():
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        arguments=["spot_joint_state_broadcaster", "--controller-manager", "/controller_manager"],
     )
 
     robot_controller_spawner = Node(
@@ -78,8 +78,8 @@ def generate_launch_description():
     # create and return launch description object
     return LaunchDescription(
         [
-            ros2_control_node,
             robot_state_publisher_node,
+            ros2_control_node,
             joint_state_broadcaster_spawner,
             delay_rviz_after_joint_state_broadcaster_spawner,
             delay_robot_controller_spawner
