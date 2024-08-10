@@ -154,21 +154,6 @@
   <gazebo reference="front_left_shoulder_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <link name="front_left_leg_link_cover">
-    <visual>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/larm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
-      <material name="yellow"/>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
-    </collision>
-  </link>
 
   <link name="front_left_leg_link">
     <visual>
@@ -197,6 +182,23 @@
   <gazebo reference="front_left_leg_link">
     <material>Gazebo/Black</material>
   </gazebo>
+
+  <link name="front_left_leg_link_cover">
+    <visual>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/larm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
+      <material name="yellow"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
+    </collision>
+  </link>
+
   <link name="front_left_foot_link">
     <visual>
       <geometry>
@@ -303,21 +305,6 @@
   <gazebo reference="front_right_shoulder_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <link name="front_right_leg_link_cover">
-    <visual>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
-      <material name="yellow"/>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
-    </collision>
-  </link>
 
   <link name="front_right_leg_link">
     <visual>
@@ -346,6 +333,23 @@
   <gazebo reference="front_right_leg_link">
     <material>Gazebo/Black</material>
   </gazebo> 
+
+  <link name="front_right_leg_link_cover">
+    <visual>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
+      <material name="yellow"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
+    </collision>
+  </link>
+
   <link name="front_right_foot_link">
     <visual>
       <geometry>
@@ -448,21 +452,6 @@
   <gazebo reference="rear_left_shoulder_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <link name="rear_left_leg_link_cover">
-    <visual>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/larm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
-      <material name="yellow"/>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
-    </collision>
-  </link>
 
   <link name="rear_left_leg_link">
     <visual>
@@ -491,6 +480,23 @@
   <gazebo reference="rear_left_leg_link">
     <material>Gazebo/Black</material>
   </gazebo>
+
+  <link name="rear_left_leg_link_cover">
+    <visual>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/larm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
+      <material name="yellow"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 0.04 -0.02"/>
+    </collision>
+  </link>
+
   <link name="rear_left_foot_link">
     <visual>
       <geometry>
@@ -593,29 +599,6 @@
   <gazebo reference="rear_right_shoulder_link">
     <material>Gazebo/Black</material>
   </gazebo>
-  <link name="rear_right_leg_link_cover">
-    <visual>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
-      <material name="yellow"/>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
-    </collision>
-
-    <collision>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.050"/>
-      <geometry>
-        <box size="0.028 0.036 0.12"/>
-      </geometry>
-    </collision>
-  </link>
-
   <link name="rear_right_leg_link">
     <visual>
       <geometry>
@@ -640,9 +623,34 @@
       <inertia ixx="1000" ixy="0" ixz="0" iyy="1000" iyz="0" izz="1000"/>
     </inertial>
   </link>
+
   <gazebo reference="rear_right_leg_link">
     <material>Gazebo/Black</material>
   </gazebo>
+
+  <link name="rear_right_leg_link_cover">
+    <visual>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
+      <material name="yellow"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://spot_micro_description/urdf/stl/rarm_cover.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.125 -0.15 -0.02"/>
+    </collision>
+
+    <collision>
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.050"/>
+      <geometry>
+        <box size="0.028 0.036 0.12"/>
+      </geometry>
+    </collision>
+  </link>
+
   <link name="rear_right_foot_link">
     <visual>
       <geometry>
@@ -705,7 +713,7 @@
   <joint name="rear_right_leg_cover_joint" type="fixed">
     <parent link="rear_right_leg_link"/>
     <child link="rear_right_leg_link_cover"/>
-    <origin xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
   <joint name="rear_right_foot" type="revolute">
     <parent link="rear_right_leg_link"/>
